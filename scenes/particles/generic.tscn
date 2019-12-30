@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/particles/particles.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=1]
+
+[sub_resource type="ParticlesMaterial" id=2]
+direction = Vector3( 0, 0, 1 )
+spread = 50.0
+initial_velocity = 3.0
+linear_accel = 5.0
+linear_accel_random = 0.5
+
+[sub_resource type="CubeMesh" id=3]
+size = Vector3( 0.05, 0.05, 0.05 )
+
+[node name="generic" type="Particles"]
+material_override = SubResource( 1 )
+emitting = false
+amount = 2
+one_shot = true
+explosiveness = 0.9
+randomness = 0.5
+process_material = SubResource( 2 )
+draw_pass_1 = SubResource( 3 )
+script = ExtResource( 1 )

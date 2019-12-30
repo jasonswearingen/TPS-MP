@@ -1,0 +1,222 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scripts/lobby.gd" type="Script" id=1]
+[ext_resource path="res://scripts/settings.gd" type="Script" id=2]
+
+[node name="lobby" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1.10803
+margin_top = -1.858
+margin_right = -1.10803
+margin_bottom = -1.85803
+size_flags_horizontal = 2
+size_flags_vertical = 2
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="connect" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -150.5
+margin_top = -61.0
+margin_right = 150.5
+margin_bottom = 61.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="v_box_container" type="VBoxContainer" parent="connect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h_box_container2" type="HBoxContainer" parent="connect/v_box_container"]
+margin_right = 261.0
+margin_bottom = 24.0
+
+[node name="name" type="LineEdit" parent="connect/v_box_container/h_box_container2"]
+margin_right = 128.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Unnamed"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="host" type="Button" parent="connect/v_box_container/h_box_container2"]
+margin_left = 132.0
+margin_right = 261.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Host"
+
+[node name="h_box_container4" type="HBoxContainer" parent="connect/v_box_container"]
+margin_top = 28.0
+margin_right = 261.0
+margin_bottom = 52.0
+
+[node name="ip" type="LineEdit" parent="connect/v_box_container/h_box_container4"]
+margin_right = 128.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "127.0.0.1"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="join" type="Button" parent="connect/v_box_container/h_box_container4"]
+margin_left = 132.0
+margin_right = 261.0
+margin_bottom = 24.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Join"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="h_box_container5" type="HBoxContainer" parent="connect/v_box_container"]
+margin_top = 56.0
+margin_right = 261.0
+margin_bottom = 70.0
+
+[node name="error_label" type="Label" parent="connect/v_box_container/h_box_container5"]
+margin_bottom = 14.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_colors/font_color = Color( 0.820312, 0.291595, 0.291595, 1 )
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="settings" type="Panel" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -280.0
+margin_bottom = 6.10352e-005
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="v_box_container" type="VBoxContainer" parent="settings"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = -20.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="settings/v_box_container"]
+margin_right = 240.0
+margin_bottom = 14.0
+text = "Set window size:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="width" type="LineEdit" parent="settings/v_box_container"]
+margin_top = 18.0
+margin_right = 240.0
+margin_bottom = 42.0
+text = "1280"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="height" type="LineEdit" parent="settings/v_box_container"]
+margin_top = 46.0
+margin_right = 240.0
+margin_bottom = 70.0
+text = "720"
+
+[node name="fullscreen" type="CheckBox" parent="settings/v_box_container"]
+margin_top = 74.0
+margin_right = 240.0
+margin_bottom = 98.0
+text = "Fullscreen"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="button" type="Button" parent="settings/v_box_container"]
+margin_top = 102.0
+margin_right = 240.0
+margin_bottom = 122.0
+text = "Set"
+
+[node name="players" type="Panel" parent="."]
+visible = false
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -126.0
+margin_top = -177.5
+margin_right = 126.0
+margin_bottom = 177.5
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="label" type="Label" parent="players"]
+margin_left = 26.0
+margin_top = 18.0
+margin_right = 142.0
+margin_bottom = 32.0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+text = "Awaiting Players..."
+
+[node name="start" type="Button" parent="players"]
+margin_left = 68.0
+margin_top = 307.0
+margin_right = 193.0
+margin_bottom = 336.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+text = "START!"
+
+[node name="list" type="ItemList" parent="players"]
+margin_left = 25.0
+margin_top = 37.0
+margin_right = 229.0
+margin_bottom = 296.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="error" type="AcceptDialog" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -41.5
+margin_top = -29.0
+margin_right = 41.5
+margin_bottom = 29.0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+[connection signal="pressed" from="connect/v_box_container/h_box_container2/host" to="." method="_on_host_pressed"]
+[connection signal="pressed" from="connect/v_box_container/h_box_container4/join" to="." method="_on_join_pressed"]
+[connection signal="pressed" from="players/start" to="." method="_on_start_pressed"]

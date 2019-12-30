@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hit_3.wav-a5431aa6f42c434571c5d646174425be.sample"
+
+[deps]
+
+source_file="res://sounds/physics/metal/hit_3.wav"
+dest_files=[ "res://.import/hit_3.wav-a5431aa6f42c434571c5d646174425be.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

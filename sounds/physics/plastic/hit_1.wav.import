@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/hit_1.wav-3d0ef3b5384c0dbfef56bbbd9996487c.sample"
+
+[deps]
+
+source_file="res://sounds/physics/plastic/hit_1.wav"
+dest_files=[ "res://.import/hit_1.wav-3d0ef3b5384c0dbfef56bbbd9996487c.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

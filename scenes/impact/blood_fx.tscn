@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/impact/impact_fx.gd" type="Script" id=1]
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="CubeMesh" id=2]
+material = SubResource( 3 )
+size = Vector3( 0.025, 0.025, 0.025 )
+
+[node name="impact_fx" type="CPUParticles"]
+emitting = false
+amount = 25
+one_shot = true
+explosiveness = 0.9
+mesh = SubResource( 2 )
+initial_velocity = 15.0
+script = ExtResource( 1 )

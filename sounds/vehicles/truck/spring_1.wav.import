@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/spring_1.wav-073f580f0c2e372c87120c0c0b935d61.sample"
+
+[deps]
+
+source_file="res://sounds/vehicles/truck/spring_1.wav"
+dest_files=[ "res://.import/spring_1.wav-073f580f0c2e372c87120c0c0b935d61.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

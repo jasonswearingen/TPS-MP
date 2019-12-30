@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/roll.wav-d10ea44c2e895da2e2d0151769f36371.sample"
+
+[deps]
+
+source_file="res://sounds/physics/metal/roll.wav"
+dest_files=[ "res://.import/roll.wav-d10ea44c2e895da2e2d0151769f36371.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
